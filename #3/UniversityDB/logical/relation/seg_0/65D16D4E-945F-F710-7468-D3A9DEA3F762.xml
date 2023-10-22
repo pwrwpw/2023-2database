@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="manager" directorySegmentName="seg_0" id="65D16D4E-945F-F710-7468-D3A9DEA3F762">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:51:33 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<sourcePk>EA0AA686-182C-024E-0494-96A3569AAC49</sourcePk>
+<targetPk>812E75A2-FEEB-3602-7B5F-735BD10415AE</targetPk>
+<dominantRole>42EB2809-760D-26BF-24A7-66F73B7C141C</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E018D086-ADED-7056-089E-22B65D87B6DD</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>42EB2809-760D-26BF-24A7-66F73B7C141C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

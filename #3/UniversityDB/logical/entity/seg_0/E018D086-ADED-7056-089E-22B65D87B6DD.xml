@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E018D086-ADED-7056-089E-22B65D87B6DD" name="Lecture">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:47:27 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lectureCode" id="5F80C2AE-57C9-AD50-E9A3-6138005BDDCA">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:47:46 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1233FB0C-0D7D-5318-2335-17C2FB9CB3F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="3957BE83-C90E-4DD1-5889-BA333EEF45FF">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:47:31 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A0F6AB-6A88-D53D-6F23-3CF9F63F6B2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="credit" id="F0517A4D-13DD-4A16-3B2D-19BE6A6E4ECB">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 17:03:30 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9D48C7E5-7312-87BB-7B59-9EDA09A27CFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="departmentNo" id="6FE9D1C5-04AD-C31D-3345-F6DD7FC2642A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 17:20:29 UTC</createdTime>
+<generatorID>E1C171AD-AA7D-BC69-CD1B-16D9F6D4FC57</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<referedAttribute>8A123879-F07D-E09B-7DB3-ABB636AFD09A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assistantNo" id="94B13FF7-3763-6FFD-AC92-2F1230880684">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:22:38 UTC</createdTime>
+<generatorID>65D16D4E-945F-F710-7468-D3A9DEA3F762</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<referedAttribute>1B36A7DC-053D-7BB2-C3D2-3DF1E3512B6A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EA0AA686-182C-024E-0494-96A3569AAC49" name="Lecture PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:54:59 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F80C2AE-57C9-AD50-E9A3-6138005BDDCA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

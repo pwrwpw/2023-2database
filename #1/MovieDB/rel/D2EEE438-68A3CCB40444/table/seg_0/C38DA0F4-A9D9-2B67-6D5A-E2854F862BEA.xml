@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C38DA0F4-A9D9-2B67-6D5A-E2854F862BEA" name="Address">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>79DB11D9-C186-A053-7E4D-4DD0652BCFCB</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="address" id="09C33EF9-FE69-6C09-18CC-6CCAD7E0DBA3">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>FBA5795D-68F0-71CF-029D-A1834F89FD2F</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>637D2CB7-5DEA-79F0-A5BC-644A395684F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="2407139F-DABD-872A-A63D-4E7B3ED0B7AF">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>123B9AA5-B246-75F1-F9B7-216E5D4F4E3D</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFA03A60-E747-9826-FFB8-A7E4C812692F" referredColumn="B70E8C01-F734-E140-06D6-C9532E373C40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92756AFB-D955-58C8-2B5D-ABCAF5C94B20" name="Address_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>A8A0D279-2B6A-D06C-CC93-497FBA28261B</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C33EF9-FE69-6C09-18CC-6CCAD7E0DBA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="610DF2A9-45CD-F226-D6BA-A4FC5C03ED23" name="Studio_Of_Address">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>37619CED-E222-8540-CE61-EFE9963DA9DA</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2407139F-DABD-872A-A63D-4E7B3ED0B7AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

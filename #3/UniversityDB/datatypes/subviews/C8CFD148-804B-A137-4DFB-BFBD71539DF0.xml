@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.datatypes.DPVDataTypes" name="DataTypes" id="C8CFD148-804B-A137-4DFB-BFBD71539DF0">
+<createdBy>ihyeonseog</createdBy>
+<modifiedBy>ihyeonseog</modifiedBy>
+<createdTime>2023-09-20 08:13:58 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="25A6225F-2740-C444-0E06-7910486918D2" otype="StructuredType" vid="84E3D7E1-D39E-737E-90B6-B0E2AA643D92">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="567" y="89" width="245" height="258"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="47E390DE-0671-C4B1-8428-0F45CBEE18F8" otype="StructuredType" vid="845ECCE9-DE6C-23ED-3995-2DAC0FB7E5D8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="100" height="100"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="69217DE5-3BDA-545F-D4B6-3E8F51732E36" otype="StructuredType" vid="49A34ABF-3546-9A40-F95C-ED70735E1C32">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="151" y="104" width="220" height="243"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" otype="StructuredType" vid="413E9695-1AB4-8E8B-E1B1-6946E8AD7127">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="100" height="100"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.datatypes.TVDTReference" oid="4F28D139-ECA3-A35B-5936-A1C7676668E7" otype="DTReference" vid_source="49A34ABF-3546-9A40-F95C-ED70735E1C32" vid_target="84E3D7E1-D39E-737E-90B6-B0E2AA643D92">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16776961</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="371" y="240"/>
+<point x="567" y="240"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

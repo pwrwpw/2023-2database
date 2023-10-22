@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="ShopDB">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="price" id="018E0D70-9F57-B5FC-23E7-648F95CB781D">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 04:37:42 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>9</dataTypePrecision>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="sno" id="05B0FD01-7055-CFE1-5605-F091BF6514F2">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-15 03:18:25 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>7</dataTypePrecision>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="name" id="3D528AC2-E3FA-43DA-9C53-9469D16B8A89">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-14 13:52:16 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>30</dataTypeSize>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="phoneNo" id="4650CB99-BFAA-7922-ED48-C28134523050">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-14 13:53:48 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>13</dataTypeSize>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 12c" definition="%COLUMN% LIKE &apos;010-____-____&apos;"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="date" id="522851E5-ECC4-8409-CF4C-B24DC5CEF92B">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-14 13:59:34 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 12c" definition="%COLUMN% &gt;= date &apos;2023-01-01&apos; and %COLUMN% &lt; date &apos;2024-01-01&apos;"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="account" id="6591F85A-DBA1-1D88-5E08-B644CC085192">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-14 02:38:00 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>20</dataTypeSize>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="email" id="7C0C2AA4-AD57-C308-4A97-31339373A248">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-15 03:15:46 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>100</dataTypeSize>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="address" id="C2CE193E-4E09-2450-D941-4AC1BB230546">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-14 13:47:46 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>255</dataTypeSize>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="context" id="F7B9123E-E66C-793D-7E86-F6A31ED5FA22">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 04:54:41 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>255</dataTypeSize>
+<fileName>ShopDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

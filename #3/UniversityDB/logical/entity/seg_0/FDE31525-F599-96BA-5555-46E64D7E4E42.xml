@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FDE31525-F599-96BA-5555-46E64D7E4E42" name="Department">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:19:06 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="departmentNo" id="8A123879-F07D-E09B-7DB3-ABB636AFD09A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 17:20:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="C44F883B-FA33-5C9A-D4B0-9947D078927E">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:19:12 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A0F6AB-6A88-D53D-6F23-3CF9F63F6B2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="departmentOffice" id="79CCC3D8-F47E-4FBE-3166-EF8340933371">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:22:21 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D6504ED9-1530-9689-2EE6-8C1BFD86BF97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chairMan" id="6ACB8224-EE50-1F2E-CE0C-04257F0A10E8">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:38:30 UTC</createdTime>
+<generatorID>C8C97469-4AD6-C44F-BD01-EC81CB4B0300</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<referedAttribute>4B8B3020-BD8A-72EB-75CA-4565FCCE6EA4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D78D2374-E7CB-FC77-0CD5-C8E3DA423676" name="Department PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:23:01 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A123879-F07D-E09B-7DB3-ABB636AFD09A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

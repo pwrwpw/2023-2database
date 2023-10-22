@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4CFABF74-5E50-01AC-FFF7-21AEAA696AFD" name="Member">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-13 03:47:27 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="memAccount" id="11092DDF-362E-31B8-02CE-BA3A3889068A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-13 03:48:17 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6591F85A-DBA1-1D88-5E08-B644CC085192</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="homeAddress" id="643EA92C-035B-58EC-CF70-AF0BADFBE21F">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 03:41:43 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C2CE193E-4E09-2450-D941-4AC1BB230546</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="memName" id="CE86D505-F9AD-3526-CBC9-FC4BE7BA2BFB">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-13 03:50:48 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3D528AC2-E3FA-43DA-9C53-9469D16B8A89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="workAddress" id="9833D901-A286-173A-7A68-762ECF6BF55C">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 03:41:51 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C2CE193E-4E09-2450-D941-4AC1BB230546</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="homePhoneNo" id="8CCAAFD7-5332-557E-B9EF-1719BD270186">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 03:41:59 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>4650CB99-BFAA-7922-ED48-C28134523050</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="workPhoneNo" id="A41943C0-86EC-9E6E-151B-335E6B4FDA08">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 03:42:07 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>4650CB99-BFAA-7922-ED48-C28134523050</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="memEmail" id="EBE74756-9CAE-8EC9-6AD9-2455D8C5C608">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 03:43:25 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C0C2AA4-AD57-C308-4A97-31339373A248</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="174F598E-C46D-F747-1969-D3725B6DE25C" name="Member PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-13 03:52:08 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11092DDF-362E-31B8-02CE-BA3A3889068A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="19C49D51-B3BA-8149-A558-19F305D98C60" name="Prof_of_CS">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:22:55 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<ordsAlias>view_2</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    d.name               AS 소속학과,
+    p.info.name          AS 이름,
+    COUNT(l.lecturecode) AS 담당강의수,
+    p.officeaddress      AS 교수사무실
+FROM
+    professor  p,
+    department d,
+    lecture_of l
+WHERE
+        p.departmentno = d.departmentno
+    AND p.professorno = l.professorno
+    AND d.name = '소프트웨어학과'
+GROUP BY
+    d.name,
+    p.info.name,
+    p.officeaddress]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="소속학과" id="838703A1-858E-FCDA-6AAD-D08CEE317C2D">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:23:19 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>소속학과</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>소속학과</headerAlias>
+<reference>false</reference>
+<referencedColumn>5BA6507A-3C02-F426-F815-F284CC67F220</referencedColumn>
+<table>8F4F6387-862A-D0F4-86C4-D16E367ACA19</table>
+<tableAlias>d</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="이름" id="90640B2D-1305-D406-3287-46F3F088542A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:24:49 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>이름</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>이름</headerAlias>
+<reference>false</reference>
+<referencedColumn>E51F0B66-15F1-E950-C635-1FDDBA664AF3</referencedColumn>
+<table>4E1A8C81-DC49-341B-2508-4277B4AECC06</table>
+<tableAlias>p</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="담당강의수" id="A2A8524D-191E-C9F4-24D4-DE9C96B71F15">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:23:19 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>담당강의수</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>담당강의수</headerAlias>
+<expression>COUNT(l.lecturecode)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="교수사무실" id="49E51F98-91CD-3E8D-7C9B-0E5549324EC7">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:31:26 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>교수사무실</alias>
+<dataType>VARCHAR2 (255)</dataType>
+<headerAlias>교수사무실</headerAlias>
+<reference>false</reference>
+<referencedColumn>36B64CC6-A595-FA9B-6AE3-97AD00A26372</referencedColumn>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4E1A8C81-DC49-341B-2508-4277B4AECC06">
+<container>true</container>
+<tableName>Professor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8F4F6387-862A-D0F4-86C4-D16E367ACA19">
+<container>true</container>
+<tableName>Department</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="620EB9B0-8051-BE84-B0DB-3445A24FC7EC">
+<container>true</container>
+<tableName>Lecture_Of</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="36B64CC6-A595-FA9B-6AE3-97AD00A26372">
+<columnName>officeAddress</columnName>
+<tableName>Professor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5BA6507A-3C02-F426-F815-F284CC67F220">
+<columnName>name</columnName>
+<tableName>Department</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="93936C97-7831-C2FF-C0E6-9FA1FD6CAD36">
+<columnName>professorNo</columnName>
+<tableName>Lecture_Of</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F1A5F617-1DBA-5BF3-60C1-3650051FAD8B">
+<columnName>departmentNo</columnName>
+<tableName>Professor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9D03A1F7-8262-3477-8D85-430C95EBD645">
+<columnName>departmentNo</columnName>
+<tableName>Department</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FF6B3F26-783B-73F9-2EA0-B3CE440F07DE">
+<columnName>professorNo</columnName>
+<tableName>Professor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E4CFF604-8E27-3AA2-4F4C-94C5C06D4B41">
+<columnName>lectureCode</columnName>
+<tableName>Lecture_Of</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

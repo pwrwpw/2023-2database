@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6576F0D8-8AF3-C27B-7F19-59FBB5A3D164" name="PhoneNumber">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 13:25:22 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="phoneNum" id="CD5BA502-A80E-6823-F879-A9FEB1A4453B">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 13:25:34 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>8884327D-20DB-2B6E-77BE-1C6E694274D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="provider" id="E80A88FE-EFC0-C731-AE7F-51C850924584">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 13:27:23 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plan" id="BC384713-1974-CF79-1988-BA8049EDF26D">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 13:27:33 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="starName" id="D42A1A76-2F2D-D54D-A018-FB53B0CEB0B3">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 14:13:56 UTC</createdTime>
+<generatorID>DD228885-E485-585E-48A7-87D3C2513D86</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AD7133DB-1828-FBF4-F68D-6C7945D087D3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="execCertNo" id="CB137603-FBF6-1C11-11C9-7DE3736BF3AB">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 14:14:05 UTC</createdTime>
+<generatorID>F384F375-06BA-7771-94B9-A693C80615CD</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6B660823-DDC3-68C9-9B16-17DAFF114BBA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2D07CB36-C1C5-5B8A-838B-4394D54D79CB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="studioName" id="1EC22FDE-0927-F3F1-B080-0C2EFE106CBD">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 14:14:15 UTC</createdTime>
+<generatorID>B5E45714-C84F-6798-CC7E-D73325150974</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4D4B67EF-1953-0276-02C3-8AA4EEE9E28C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9ECED24A-5A6A-5323-6765-7EECE83A7686" name="PhoneNumber PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 13:31:03 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CD5BA502-A80E-6823-F879-A9FEB1A4453B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

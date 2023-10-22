@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B349B3F8-0846-217D-3FDD-D7DA80520BCA" name="Orders">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>9D468349-3785-4E35-7FC4-BCF181AD31A3</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderNo" id="E26C303B-7E19-5F67-BF2C-99C4D95D97FF">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>F8DBB6EA-D27B-4DFE-883A-A7A8A9A45E55</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B0FD01-7055-CFE1-5605-F091BF6514F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderDate" id="83D7ADF1-4360-F6D1-55DF-503AC66BDECB">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>C93C5EA6-E747-3BD1-0D83-D79CBAA45A28</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>522851E5-ECC4-8409-CF4C-B24DC5CEF92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderAccount" id="C6F20003-2C8A-FFB5-8F05-E95266179741">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>6C3B2A7C-2B93-A76F-8F1F-A10B701928DC</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6591F85A-DBA1-1D88-5E08-B644CC085192</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4E3C42D-EF37-7C2A-7AB5-31B1E15EE516" referredColumn="185F3F81-8C8C-B9C9-84BD-AAC1374F77DA"/>
+</associations>
+</Column>
+<Column name="deliveryAddress" id="41C3A2CA-A4F4-D772-CD13-B5BB5E6C2FAA">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>2FDA7128-58AB-6E70-740A-F7EEAB3AA2B0</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C2CE193E-4E09-2450-D941-4AC1BB230546</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E902260-8E24-2D05-62E6-26F5AA0F553E" name="Order_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>F5DABB19-7FBF-DB6C-D2DE-4B92B9503B4A</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E26C303B-7E19-5F67-BF2C-99C4D95D97FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56EB6C26-8F8B-D9F4-1080-78A8E396CE36" name="Member_Of_Order">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>6606ABAB-47DC-33A1-B675-56AA4B9C314D</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6F20003-2C8A-FFB5-8F05-E95266179741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Sounds" directorySegmentName="seg_0" id="12C8A5B0-C323-004C-8D14-991CD9D406CC">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-05 14:23:46 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<engineerTo>
+<item key="D2EEE438-5A3C-8F80-36DD-68A3CCB40444" value="true"/>
+</engineerTo>
+<sourcePk>BB32D055-E7E1-E3AB-9549-3B12A765C18E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>103AF8F9-3F49-6C0D-887C-D4C7A989F642</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>252C4199-4A71-5798-6B15-5946AEF4ACCE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="554C0BD2-B999-2C6B-7EEC-30CF05BC34DD" name="Movie">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>252C4199-4A71-5798-6B15-5946AEF4ACCE</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="title" id="2FFA06B4-2392-BCEA-C2AA-579822F935E8">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>E9E85784-8E1F-45EF-46F6-E420F885A719</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A7537F94-7031-15C3-A1A9-FD970C032C15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="3D67B944-23DB-0352-79CA-1B01AE1E8A0C">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>B9B0A05B-2E1C-358D-0EF6-51EB420A000A</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>82C70856-627F-DD2A-458C-D57C0130991A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1900</beginValue>
+<endValue>2023</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="length" id="15AA274F-5338-80F8-E1EA-B781E84CBD65">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>2B12EB31-0ED7-3E8D-B432-AB39AF2235D0</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7CE13137-D0B1-9D55-3160-B0A2BF834E7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inColor" id="B43B5C97-DB75-1AAB-2C86-05C0FA3AA65C">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>0B5CF891-1E26-D026-E296-D4A373E10E13</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>CD5664F6-D738-2FCB-4720-9DE029AA23FF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="studioName" id="D526A1FE-0CE2-69A1-2D93-B7017C463989">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>2DB3AE17-BC95-4FE4-667C-E7FE8A826473</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89F60538-18AD-226B-C5EF-67FF0512C5C3" referredColumn="B70E8C01-F734-E140-06D6-C9532E373C40"/>
+</associations>
+</Column>
+<Column name="producerNo" id="6DDFC882-304A-B338-6372-2CDDAED1F7E0">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>7BE97E83-469F-5D62-CC14-1130BC095B59</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2D07CB36-C1C5-5B8A-838B-4394D54D79CB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB8A405B-D60D-63E8-27E2-E61B7D296963" referredColumn="ED922102-8037-8C72-EFEB-1973C14C556E"/>
+</associations>
+</Column>
+<Column name="directNo" id="678081C2-C88D-E39E-D390-B5A6535D7E26">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>736759A8-B142-E6A8-79A9-4BD16C4B8112</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2D07CB36-C1C5-5B8A-838B-4394D54D79CB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4263E837-C818-920D-7EDA-86EC1EBBD01A" referredColumn="ED922102-8037-8C72-EFEB-1973C14C556E"/>
+</associations>
+</Column>
+<Column name="soundstudioName" id="511F1CC1-DDFD-9C1C-F254-EB0B24D24AD9">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>BEFF2B10-D711-B397-7FF6-DDE3FBB58651</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D5D1E76-A116-E66B-7B5E-69CEECD2A999" referredColumn="B70E8C01-F734-E140-06D6-C9532E373C40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8EAF76E-A904-11EE-0B54-803E1F1A5B60" name="Movie_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>862D90DE-16DF-A284-94D6-DDD8075CC86F</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FFA06B4-2392-BCEA-C2AA-579822F935E8"/>
+<colUsage columnID="3D67B944-23DB-0352-79CA-1B01AE1E8A0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43AA551F-26FC-6EBB-7C9B-69F65718301F" name="Directed">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>603988A9-4B56-BE12-DB59-C5B8A172607C</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="678081C2-C88D-E39E-D390-B5A6535D7E26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5BEED50-6290-6D14-98D5-36E8B813A7D5" name="Owns">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>D1730211-C442-F851-3F08-056E60F1D152</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D526A1FE-0CE2-69A1-2D93-B7017C463989"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="534E6AC4-F214-705D-15A3-60DCD10A23F2" name="producer">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>5C3926BC-53CD-6E9F-2836-BFA208A1868A</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DDFC882-304A-B338-6372-2CDDAED1F7E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F00E3D7-278E-0BE8-D0D9-3FC3483459E6" name="Sounds">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>12C8A5B0-C323-004C-8D14-991CD9D406CC</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="511F1CC1-DDFD-9C1C-F254-EB0B24D24AD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

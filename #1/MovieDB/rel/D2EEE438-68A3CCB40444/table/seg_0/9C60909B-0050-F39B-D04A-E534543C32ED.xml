@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C60909B-0050-F39B-D04A-E534543C32ED" name="PhoneNumber">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>6576F0D8-8AF3-C27B-7F19-59FBB5A3D164</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="phoneNum" id="08775409-BBF7-5DC6-FB66-91D6BB699B15">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>CD5BA502-A80E-6823-F879-A9FEB1A4453B</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>8884327D-20DB-2B6E-77BE-1C6E694274D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="provider" id="7E94553A-C222-408C-1C52-8073456ED272">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>E80A88FE-EFC0-C731-AE7F-51C850924584</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plan" id="96D3F059-840D-402A-CE7A-5D462CFE8003">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>BC384713-1974-CF79-1988-BA8049EDF26D</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="starName" id="23A1CCB3-5AD1-3422-5FC2-FB9647A5A8B9">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>D42A1A76-2F2D-D54D-A018-FB53B0CEB0B3</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80E24FC1-3375-EAF1-7AEC-5241AC7415B8" referredColumn="D157852C-AB44-72F1-13D1-2BB8247E96F6"/>
+</associations>
+</Column>
+<Column name="execCertNo" id="D8603139-9008-FA79-B242-11F7FFAD7BE2">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>CB137603-FBF6-1C11-11C9-7DE3736BF3AB</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2D07CB36-C1C5-5B8A-838B-4394D54D79CB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C37FE6BC-3288-1C7F-B306-A21870F836A0" referredColumn="ED922102-8037-8C72-EFEB-1973C14C556E"/>
+</associations>
+</Column>
+<Column name="studioName" id="EF14A553-8E16-C3DE-49F2-25BEC7706A78">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>1EC22FDE-0927-F3F1-B080-0C2EFE106CBD</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A87530AD-FF15-3F23-A431-37D44785ADC2" referredColumn="B70E8C01-F734-E140-06D6-C9532E373C40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35B652E6-11CF-BC47-122F-5AEB6CBD4FC4" name="PhoneNumber_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>9ECED24A-5A6A-5323-6765-7EECE83A7686</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08775409-BBF7-5DC6-FB66-91D6BB699B15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12FABF11-2D41-74B9-6EAA-09F567F9EB70" name="MovieExec_Of_PhoneNumber">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>F384F375-06BA-7771-94B9-A693C80615CD</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8603139-9008-FA79-B242-11F7FFAD7BE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D399139C-3AFB-8508-D178-69B20DF16172" name="MovieStar_Of_PhoneNumber">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>DD228885-E485-585E-48A7-87D3C2513D86</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23A1CCB3-5AD1-3422-5FC2-FB9647A5A8B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93EC98C7-0F74-5D04-0186-EDEAB0567974" name="Studio_Of_PhoneNumber">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>B5E45714-C84F-6798-CC7E-D73325150974</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF14A553-8E16-C3DE-49F2-25BEC7706A78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

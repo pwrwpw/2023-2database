@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6438356F-E5A7-2CC9-F52B-E3963FBFE8A4" name="Delivery_Board">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>0DD36222-ABBB-544F-EF1A-C70583C02C6B</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DBoardTitle" id="AE00B1C0-E4A4-EC9F-00E2-9E442350BE47">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>C6FF4D25-3592-249F-A934-76718DD050E1</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3D528AC2-E3FA-43DA-9C53-9469D16B8A89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5BDC5A0-AB69-7804-C7CC-6373511AA53B" referredColumn="D088C4B0-1989-1F5D-FA42-41E84829BDDE"/>
+</associations>
+</Column>
+<Column name="DBoardPostingDate" id="AF209C50-C579-B92B-6DC3-203C70FC0EFE">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>9BB77472-E124-50FF-01E5-B35D8B2DCB8F</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>522851E5-ECC4-8409-CF4C-B24DC5CEF92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5BDC5A0-AB69-7804-C7CC-6373511AA53B" referredColumn="ECC0502C-B6F8-2A5D-88F7-B6F603C3E19A"/>
+</associations>
+</Column>
+<Column name="writeAcc" id="3AEF8B5A-0220-6F5A-8E8A-5E9CC6FD763A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>7BF54551-8490-C05E-7163-AF1936F781B9</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6591F85A-DBA1-1D88-5E08-B644CC085192</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AC418D9-434C-6C79-BE37-784E9DC80F8F" referredColumn="185F3F81-8C8C-B9C9-84BD-AAC1374F77DA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A77B6CCC-ADF4-1F33-F62C-F6D9F8129AF1" name="Delivery_Board_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>3A88431E-8BCB-86AF-88C5-39AA6C22B703</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE00B1C0-E4A4-EC9F-00E2-9E442350BE47"/>
+<colUsage columnID="AF209C50-C579-B92B-6DC3-203C70FC0EFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="750607B7-4CAE-F78C-5F98-4CBAAAE3C08D" name="DBoard_Of_Board">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>5F4564BE-FB05-0474-54F5-1957D09B21EF</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE00B1C0-E4A4-EC9F-00E2-9E442350BE47"/>
+<colUsage columnID="AF209C50-C579-B92B-6DC3-203C70FC0EFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74DA7249-A9BA-C286-6BCE-E4608C27D255" name="member_Of_DBoard">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>7158D950-9CEE-3DD5-A821-F5CE7D909AD8</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AEF8B5A-0220-6F5A-8E8A-5E9CC6FD763A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

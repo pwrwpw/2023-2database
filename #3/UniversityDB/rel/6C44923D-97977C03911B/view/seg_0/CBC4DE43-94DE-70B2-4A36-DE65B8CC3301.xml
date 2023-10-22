@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="CBC4DE43-94DE-70B2-4A36-DE65B8CC3301" name="Special_Lectures">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:25:08 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<ordsAlias>view_3</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    ls.lectureday   AS 강의날짜,
+    ls.lecturetime  AS 강의시간,
+    l.name          AS 강의명,
+    cl.buildingname AS 건물명,
+    cl.roomno       AS 호실
+FROM
+    lecture_schedule ls,
+    lecture          l,
+    classlocation    cl
+WHERE
+        l.lecturecode = ls.lecturecode
+    AND l.lecturecode = cl.lecturecode
+    AND ls.lectureday IN ( '월', '수', '금' )
+    AND ls.lecturetime >= 6
+    AND ls.lecturetime <= 9
+GROUP BY
+    ls.lectureday,
+    ls.lecturetime,
+    l.name,
+    cl.buildingname,
+    cl.roomno
+ORDER BY
+    강의날짜 DESC,
+    강의시간,
+    강의명]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="강의날짜" id="874169C9-1BF4-EA63-8AB2-93AC4211FCD7">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 16:02:08 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>강의날짜</alias>
+<dataType>CHAR (2)</dataType>
+<headerAlias>강의날짜</headerAlias>
+<reference>false</reference>
+<referencedColumn>D797EEEF-6449-92A3-531A-FAAABC2C1FAB</referencedColumn>
+<table>FAF06321-315B-9BCF-C311-62CEBC107A04</table>
+<tableAlias>ls</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="강의시간" id="9E38BA1F-D63A-C81A-2A32-50689568FD7B">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:42:13 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>강의시간</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>강의시간</headerAlias>
+<reference>false</reference>
+<referencedColumn>086DC0E0-B445-638A-01BE-AF2676999E29</referencedColumn>
+<table>FAF06321-315B-9BCF-C311-62CEBC107A04</table>
+<tableAlias>lecture_schedule</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="강의명" id="344CE24D-C643-330D-85C3-CA1B0E324FD6">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:42:13 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>강의명</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>강의명</headerAlias>
+<reference>false</reference>
+<referencedColumn>DADF5558-4C32-A1CB-601A-113C92B61067</referencedColumn>
+<table>840B8475-0152-134A-67F7-175C4D9FBFE0</table>
+<tableAlias>l</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="건물명" id="3ABDE1E5-D040-30FC-48D0-D88DE6E99626">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:42:13 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>건물명</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>건물명</headerAlias>
+<reference>false</reference>
+<referencedColumn>A3B752ED-5749-8541-C92E-C56B4BB51281</referencedColumn>
+<table>491EC9EE-8EDE-01BF-78A8-AABBF1ABBFB2</table>
+<tableAlias>cl</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="호실" id="1237121E-82F6-EAC5-7722-8CF695107D40">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 15:42:13 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>호실</alias>
+<dataType>NUMBER (10)</dataType>
+<headerAlias>호실</headerAlias>
+<reference>false</reference>
+<referencedColumn>834A9A53-543F-77BF-BE7E-0445C7F76F8D</referencedColumn>
+<table>491EC9EE-8EDE-01BF-78A8-AABBF1ABBFB2</table>
+<tableAlias>cl</tableAlias>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FAF06321-315B-9BCF-C311-62CEBC107A04">
+<container>true</container>
+<tableName>Lecture_schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="840B8475-0152-134A-67F7-175C4D9FBFE0">
+<container>true</container>
+<tableName>Lecture</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="491EC9EE-8EDE-01BF-78A8-AABBF1ABBFB2">
+<container>true</container>
+<tableName>classLocation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DADF5558-4C32-A1CB-601A-113C92B61067">
+<columnName>name</columnName>
+<tableName>Lecture</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D797EEEF-6449-92A3-531A-FAAABC2C1FAB">
+<columnName>lectureDay</columnName>
+<tableName>Lecture_schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A3B752ED-5749-8541-C92E-C56B4BB51281">
+<columnName>buildingName</columnName>
+<tableName>classLocation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="086DC0E0-B445-638A-01BE-AF2676999E29">
+<columnName>lectureTime</columnName>
+<tableName>Lecture_schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="834A9A53-543F-77BF-BE7E-0445C7F76F8D">
+<columnName>roomNo</columnName>
+<tableName>classLocation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="44D8041C-6634-733F-B362-4E7FFDC76292">
+<columnName>lectureCode</columnName>
+<tableName>Lecture_schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2F8FD30D-C98D-7038-844D-047D1C9065DE">
+<columnName>lectureCode</columnName>
+<tableName>classLocation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7E7078D9-4D30-94F0-F1AA-DB876805E112">
+<columnName>lectureCode</columnName>
+<tableName>Lecture</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="30740CCB-066E-0D17-0ADC-385F0B7CC88C" mainViewID="D3B9BDC3-43AF-A122-46E1-DD7E420F2E1F">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-05 13:56:49 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

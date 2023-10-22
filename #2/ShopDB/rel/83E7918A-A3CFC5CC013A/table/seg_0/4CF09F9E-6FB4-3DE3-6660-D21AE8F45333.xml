@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CF09F9E-6FB4-3DE3-6660-D21AE8F45333" name="Order_Of_Product">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderNo" id="F01AF57D-34B1-8E18-2E42-2937E8474160">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B0FD01-7055-CFE1-5605-F091BF6514F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B000AF5F-A03C-EC90-5496-B2B36AE11C7A" referredColumn="E26C303B-7E19-5F67-BF2C-99C4D95D97FF"/>
+</associations>
+</Column>
+<Column name="productNo" id="98F59E87-D720-C2C8-B8FF-36D61358F1DE">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B0FD01-7055-CFE1-5605-F091BF6514F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56A6781B-A5F7-84B2-58F2-8C2700B8A135" referredColumn="AD389223-1B5D-2B77-71EA-D0E765DDB68C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A834E777-3C8C-65B4-7792-9A335E36B8FB" name="Order_Of_Product_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F01AF57D-34B1-8E18-2E42-2937E8474160"/>
+<colUsage columnID="98F59E87-D720-C2C8-B8FF-36D61358F1DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AF01882-6FFA-16D8-2FDD-1ACE6B4B5DF7" name="Order_Of_Product_Order_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>6DD56C0B-03C5-513F-679E-9D84FA2242D2</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F01AF57D-34B1-8E18-2E42-2937E8474160"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27135635-6A1A-A264-DDDB-4C71D69FA547" name="Order_Of_Product_Product_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>6DD56C0B-03C5-513F-679E-9D84FA2242D2</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98F59E87-D720-C2C8-B8FF-36D61358F1DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

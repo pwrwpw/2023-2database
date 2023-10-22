@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0DD36222-ABBB-544F-EF1A-C70583C02C6B" name="Delivery_Board">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 04:52:50 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DBoardTitle" id="C6FF4D25-3592-249F-A934-76718DD050E1">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 05:03:38 UTC</createdTime>
+<generatorID>5F4564BE-FB05-0474-54F5-1957D09B21EF</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<referedAttribute>D362EF3E-653F-1FBC-C95F-BB869928BC63</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3D528AC2-E3FA-43DA-9C53-9469D16B8A89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DBoardPostingDate" id="9BB77472-E124-50FF-01E5-B35D8B2DCB8F">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 05:03:38 UTC</createdTime>
+<generatorID>5F4564BE-FB05-0474-54F5-1957D09B21EF</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<referedAttribute>F9FC9218-3E04-7688-2F5C-20C7B23DBF1F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>522851E5-ECC4-8409-CF4C-B24DC5CEF92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="writeAcc" id="7BF54551-8490-C05E-7163-AF1936F781B9">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 04:58:10 UTC</createdTime>
+<generatorID>7158D950-9CEE-3DD5-A821-F5CE7D909AD8</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="true"/>
+</engineerTo>
+<referedAttribute>11092DDF-362E-31B8-02CE-BA3A3889068A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6591F85A-DBA1-1D88-5E08-B644CC085192</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3A88431E-8BCB-86AF-88C5-39AA6C22B703" name="Delivery_Board PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 05:03:16 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83E7918A-2713-DC06-ACE9-A3CFC5CC013A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C6FF4D25-3592-249F-A934-76718DD050E1</attributeRef>
+<attributeRef>9BB77472-E124-50FF-01E5-B35D8B2DCB8F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

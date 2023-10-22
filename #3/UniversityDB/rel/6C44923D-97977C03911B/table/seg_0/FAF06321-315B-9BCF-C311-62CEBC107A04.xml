@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAF06321-315B-9BCF-C311-62CEBC107A04" name="Lecture_schedule">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lectureCode" id="44D8041C-6634-733F-B362-4E7FFDC76292">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1233FB0C-0D7D-5318-2335-17C2FB9CB3F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F80EF3E-C797-A741-2C66-E563F23BDC5E" referredColumn="7E7078D9-4D30-94F0-F1AA-DB876805E112"/>
+</associations>
+</Column>
+<Column name="lectureTime" id="086DC0E0-B445-638A-01BE-AF2676999E29">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BFCFC3F1-16D3-D574-0935-3D5CE6579F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A923919B-B5A7-A07E-7E91-7CC288A3B8C6" referredColumn="6AB29C22-B59A-CE77-849F-5A975296B269"/>
+</associations>
+</Column>
+<Column name="lectureDay" id="D797EEEF-6449-92A3-531A-FAAABC2C1FAB">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>EAF73AAF-8BA8-8A6A-36CC-0212B2016B0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A923919B-B5A7-A07E-7E91-7CC288A3B8C6" referredColumn="22127FC3-2FE7-222F-A164-286D91B489EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9691540-2DA7-3A74-AB7D-334DBD0733A0" name="Lecture_schedule_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="086DC0E0-B445-638A-01BE-AF2676999E29"/>
+<colUsage columnID="D797EEEF-6449-92A3-531A-FAAABC2C1FAB"/>
+<colUsage columnID="44D8041C-6634-733F-B362-4E7FFDC76292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A78561D-6070-DF16-FFAF-1721B80EEA94" name="LectureTime_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>C0E43006-C6CC-74AA-C0FF-BEE0F18380D3</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="086DC0E0-B445-638A-01BE-AF2676999E29"/>
+<colUsage columnID="D797EEEF-6449-92A3-531A-FAAABC2C1FAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89BD1C17-BDFF-8228-19D0-E705DFA0A87C" name="Lecture_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>C0E43006-C6CC-74AA-C0FF-BEE0F18380D3</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44D8041C-6634-733F-B362-4E7FFDC76292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

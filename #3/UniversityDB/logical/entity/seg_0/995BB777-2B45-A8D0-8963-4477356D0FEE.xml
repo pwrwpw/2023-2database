@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="995BB777-2B45-A8D0-8963-4477356D0FEE" name="Professor">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:11:38 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="professorNo" id="4B8B3020-BD8A-72EB-75CA-4565FCCE6EA4">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="info" id="4CD39D6F-A59B-2845-AA28-37FACA858BE1">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:11:49 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>25A6225F-2740-C444-0E06-7910486918D2</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="officeAddress" id="4833B6F3-C55F-D8F5-3BF6-D23C30EF1877">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:13:54 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D6504ED9-1530-9689-2EE6-8C1BFD86BF97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="major" id="142B355E-D70F-BF54-EA99-30C56D11F98A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:14:09 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1E4EDFE9-0F78-A265-1D7B-B6209EEE6A0A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="departmentNo" id="626BECA7-83BB-CDDF-B96F-510F13CD504F">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 17:20:29 UTC</createdTime>
+<generatorID>686DE8D8-0924-4EB7-7815-A55A614D97EB</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<referedAttribute>8A123879-F07D-E09B-7DB3-ABB636AFD09A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<nestedAttributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<nestedAttribute name="info.name" directorySegmentName="seg_0" id="6BE0AC33-9A34-20EB-6D42-D3DADE0A3999">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<parentObject>4CD39D6F-A59B-2845-AA28-37FACA858BE1</parentObject>
+<structAttributeID>E3FD86D1-53CF-6EAC-9523-09BE25DF7323</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<domain>15A0F6AB-6A88-D53D-6F23-3CF9F63F6B2D</domain>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</nestedAttribute>
+<nestedAttribute name="info.homeAddress" directorySegmentName="seg_0" id="85E9A88D-064E-56E7-D5EF-13B8663DC1C9">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>4CD39D6F-A59B-2845-AA28-37FACA858BE1</parentObject>
+<structAttributeID>62F8CA31-3ED4-E52C-44DB-A5CA432FE0BD</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<domain>D6504ED9-1530-9689-2EE6-8C1BFD86BF97</domain>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</nestedAttribute>
+<nestedAttribute name="info.PhoneNo" directorySegmentName="seg_0" id="C48A7A9B-285E-53DA-B986-EB3889AC5CF4">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>4CD39D6F-A59B-2845-AA28-37FACA858BE1</parentObject>
+<structAttributeID>2DB6CBB4-FCEA-C780-7280-44814FB4578E</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>69217DE5-3BDA-545F-D4B6-3E8F51732E36</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</nestedAttribute>
+<nestedAttribute name="info.PhoneNo.cellPhoneNo" directorySegmentName="seg_0" id="2E397965-9DF6-BCAC-EB7D-8E58FCCAF877">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>C48A7A9B-285E-53DA-B986-EB3889AC5CF4</parentObject>
+<structAttributeID>400AB804-95E7-CF10-A802-4B701CE264D6</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>450F8A14-222F-307B-E341-DEE7031B40DD</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</nestedAttribute>
+<nestedAttribute name="info.PhoneNo.homePhoneNo" directorySegmentName="seg_0" id="C11DBBB6-7777-86F4-D17D-D50559704131">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>C48A7A9B-285E-53DA-B986-EB3889AC5CF4</parentObject>
+<structAttributeID>3504501B-3DC1-6097-675A-334874F5EFCD</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>84CB790C-002E-3374-82E6-095EE18F929A</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</nestedAttribute>
+<nestedAttribute name="info.PhoneNo.OfficePhoneNo" directorySegmentName="seg_0" id="766A2648-81D4-CBF2-DD3F-E9AC7BD29138">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:12:44 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>C48A7A9B-285E-53DA-B986-EB3889AC5CF4</parentObject>
+<structAttributeID>B0B0FEA1-7368-0A0C-B398-2D4BC8307C1D</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>4F381FFD-01BB-B1AB-B97B-F2B0EF075CEB</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</nestedAttribute>
+</nestedAttributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="381E9B00-4FB7-F9DA-13F9-C87821818EEE" name="Professor PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:24:47 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B8B3020-BD8A-72EB-75CA-4565FCCE6EA4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

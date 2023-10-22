@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="620EB9B0-8051-BE84-B0DB-3445A24FC7EC" name="Lecture_Of">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="professorNo" id="93936C97-7831-C2FF-C0E6-9FA1FD6CAD36">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C93A9DF-ED0D-88A0-AC0F-8C0BDCEEDABD" referredColumn="FF6B3F26-783B-73F9-2EA0-B3CE440F07DE"/>
+</associations>
+</Column>
+<Column name="lectureCode" id="E4CFF604-8E27-3AA2-4F4C-94C5C06D4B41">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1233FB0C-0D7D-5318-2335-17C2FB9CB3F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F9F580A-2552-AF8C-E1D6-FDE07CCC7E0B" referredColumn="7E7078D9-4D30-94F0-F1AA-DB876805E112"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6F3A80C-6B19-6834-82FF-5EB0422B9D04" name="Lecture_Of_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93936C97-7831-C2FF-C0E6-9FA1FD6CAD36"/>
+<colUsage columnID="E4CFF604-8E27-3AA2-4F4C-94C5C06D4B41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEA7A983-DCE4-F509-3A8F-DB450C265A8F" name="Lecture_Of_Professor_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>59E0DDF2-058A-77FD-315B-6DCF94653DED</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93936C97-7831-C2FF-C0E6-9FA1FD6CAD36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4245218E-049A-4603-12B2-42142033497E" name="Lecture_Of_Lecture_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>59E0DDF2-058A-77FD-315B-6DCF94653DED</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4CFF604-8E27-3AA2-4F4C-94C5C06D4B41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

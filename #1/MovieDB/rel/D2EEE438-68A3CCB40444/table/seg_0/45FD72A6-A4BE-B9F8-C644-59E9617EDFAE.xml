@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45FD72A6-A4BE-B9F8-C644-59E9617EDFAE" name="StarsIn">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="movieTitle" id="DD647271-C6BB-042F-5CDC-AEF229D67537">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A7537F94-7031-15C3-A1A9-FD970C032C15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4299B207-2DD9-1501-D025-FF1FD7C8E2BC" referredColumn="2FFA06B4-2392-BCEA-C2AA-579822F935E8"/>
+</associations>
+</Column>
+<Column name="movieYear" id="10EE81A3-58BF-E1A2-9408-119EDAF6CD8E">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>82C70856-627F-DD2A-458C-D57C0130991A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1900</beginValue>
+<endValue>2023</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="4299B207-2DD9-1501-D025-FF1FD7C8E2BC" referredColumn="3D67B944-23DB-0352-79CA-1B01AE1E8A0C"/>
+</associations>
+</Column>
+<Column name="starName" id="F091C6A1-FB8F-793C-8C82-F7649808B070">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1074AD74-62F7-06C9-A658-862CF5787190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DB53999-53DC-9A9B-0BF7-17A5ED5430F2" referredColumn="D157852C-AB44-72F1-13D1-2BB8247E96F6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29DEAE8A-CB1C-0C2C-6F17-BC9EBF533078" name="StarsIn_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<ownerDesignName>MovieDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD647271-C6BB-042F-5CDC-AEF229D67537"/>
+<colUsage columnID="10EE81A3-58BF-E1A2-9408-119EDAF6CD8E"/>
+<colUsage columnID="F091C6A1-FB8F-793C-8C82-F7649808B070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D28ED00-8967-C1CB-F58A-98B71C921350" name="Movie_Of_StarsIn">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>242013B2-8F55-C557-7E00-4C8BFE41CAFB</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD647271-C6BB-042F-5CDC-AEF229D67537"/>
+<colUsage columnID="10EE81A3-58BF-E1A2-9408-119EDAF6CD8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F783DE3E-865E-1A29-12FE-0A49A8FBA2B8" name="StarsIn_Of_MovieStar">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-07 15:16:36 UTC</createdTime>
+<generatorID>242013B2-8F55-C557-7E00-4C8BFE41CAFB</generatorID>
+<ownerDesignName>MovieDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F091C6A1-FB8F-793C-8C82-F7649808B070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F4F6387-862A-D0F4-86C4-D16E367ACA19" name="Department">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>FDE31525-F599-96BA-5555-46E64D7E4E42</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="departmentNo" id="9D03A1F7-8262-3477-8D85-430C95EBD645">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>8A123879-F07D-E09B-7DB3-ABB636AFD09A</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5BA6507A-3C02-F426-F815-F284CC67F220">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>C44F883B-FA33-5C9A-D4B0-9947D078927E</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A0F6AB-6A88-D53D-6F23-3CF9F63F6B2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="departmentOffice" id="05CCD8E5-1212-01F7-0E5D-EACDA6248764">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>79CCC3D8-F47E-4FBE-3166-EF8340933371</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D6504ED9-1530-9689-2EE6-8C1BFD86BF97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chairMan" id="34AF399A-EEA6-6843-E65F-883B58BFF425">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>6ACB8224-EE50-1F2E-CE0C-04257F0A10E8</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D45DFC8-614C-A865-A9C2-CFA1E0FA7E4E" referredColumn="FF6B3F26-783B-73F9-2EA0-B3CE440F07DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="333C9FAC-3CD8-7D40-DE2E-D828EEA232DA" name="Department_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>D78D2374-E7CB-FC77-0CD5-C8E3DA423676</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D03A1F7-8262-3477-8D85-430C95EBD645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="018886F3-A17F-A3EA-19D7-592DAE34DA6E" name="Department__IDX">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C8C97469-4AD6-C44F-BD01-EC81CB4B0300</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="34AF399A-EEA6-6843-E65F-883B58BFF425"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85197722-D5CD-DD95-39B1-83B5FEEA7348" name="Chair_of">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>C8C97469-4AD6-C44F-BD01-EC81CB4B0300</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34AF399A-EEA6-6843-E65F-883B58BFF425"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

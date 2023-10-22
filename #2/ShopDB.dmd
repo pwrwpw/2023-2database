@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ShopDB" id="5C501990-3BA0-6D13-8AEB-AB2163179642" version="3.5">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-13 03:46:44 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5C501990-3BA0-6D13-8AEB-AB2163179642</designId>
+</OSDM_Design>

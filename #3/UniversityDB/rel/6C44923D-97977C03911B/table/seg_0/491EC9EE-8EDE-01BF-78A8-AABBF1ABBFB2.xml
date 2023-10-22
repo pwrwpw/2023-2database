@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="491EC9EE-8EDE-01BF-78A8-AABBF1ABBFB2" name="classLocation">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lectureCode" id="2F8FD30D-C98D-7038-844D-047D1C9065DE">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1233FB0C-0D7D-5318-2335-17C2FB9CB3F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A5A0451-7737-DDF3-7AA8-0A2C016EC8F0" referredColumn="7E7078D9-4D30-94F0-F1AA-DB876805E112"/>
+</associations>
+</Column>
+<Column name="buildingName" id="A3B752ED-5749-8541-C92E-C56B4BB51281">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A0F6AB-6A88-D53D-6F23-3CF9F63F6B2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59C1A8F9-5CE5-F1D4-9C78-18EAAF90AB8F" referredColumn="8CFFDC5E-8215-57B4-AF7F-CF12BE45E164"/>
+</associations>
+</Column>
+<Column name="roomNo" id="834A9A53-543F-77BF-BE7E-0445C7F76F8D">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D0AB99-20EC-7020-37C7-D7009636EB71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59C1A8F9-5CE5-F1D4-9C78-18EAAF90AB8F" referredColumn="10ACF07F-4B1C-BD61-9209-1ECAD62D5D30"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A78BE236-134E-9890-F86A-FC3A419E1220" name="classLocation_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3B752ED-5749-8541-C92E-C56B4BB51281"/>
+<colUsage columnID="834A9A53-543F-77BF-BE7E-0445C7F76F8D"/>
+<colUsage columnID="2F8FD30D-C98D-7038-844D-047D1C9065DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C874C3F-FA72-C215-CFE0-335A4D2FD746" name="classLocation_LectureRoom_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>58CBB23E-9A63-4E13-6531-D99F3B9F2F62</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3B752ED-5749-8541-C92E-C56B4BB51281"/>
+<colUsage columnID="834A9A53-543F-77BF-BE7E-0445C7F76F8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3CA9F27-F4A5-E914-12E2-01459373B46D" name="classLocation_Lecture_FK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-23 14:39:17 UTC</createdTime>
+<generatorID>58CBB23E-9A63-4E13-6531-D99F3B9F2F62</generatorID>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F8FD30D-C98D-7038-844D-047D1C9065DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

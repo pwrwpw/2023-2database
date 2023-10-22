@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="UniversityDB">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="sno" id="06D0AB99-20EC-7020-37C7-D7009636EB71">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:13:14 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="lectureCode" id="1233FB0C-0D7D-5318-2335-17C2FB9CB3F6">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:49:07 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>8</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="name" id="15A0F6AB-6A88-D53D-6F23-3CF9F63F6B2D">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-20 08:43:58 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>30</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="major" id="1E4EDFE9-0F78-A265-1D7B-B6209EEE6A0A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:14:32 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>50</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="MaxNo" id="40758FD2-100E-9410-8422-0BE447ACD0EF">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 16:58:07 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="cellphoneNo" id="450F8A14-222F-307B-E341-DEE7031B40DD">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-20 08:44:40 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>13</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 12c" definition="%COLUMN% LIKE &apos;010-____-____&apos;"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="officePhoneNo" id="4F381FFD-01BB-B1AB-B97B-F2B0EF075CEB">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 16:59:19 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>13</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 12c" definition="%COLUMN% LIKE &apos;051-____-____&apos; OR %COLUMN% IS NULL"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="homePhoneNo" id="84CB790C-002E-3374-82E6-095EE18F929A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 16:58:33 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>13</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 12c" definition="%COLUMN% LIKE &apos;051-____-____&apos; OR %COLUMN% IS NULL"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="credit" id="9D48C7E5-7312-87BB-7B59-9EDA09A27CFD">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 17:03:39 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="time" id="BFCFC3F1-16D3-D574-0935-3D5CE6579F7A">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 04:50:57 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>3</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="address" id="D6504ED9-1530-9689-2EE6-8C1BFD86BF97">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-20 08:45:56 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>255</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="day" id="EAF73AAF-8BA8-8A6A-36CC-0212B2016B0D">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 13:48:37 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>2</dataTypeSize>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="floor" id="F0A9A56F-B120-E775-1E4A-AB0445909E99">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 13:30:08 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<fileName>UniversityDB</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56763110-4C49-0D9A-75BD-DC141E7E5A58" name="LectureTime">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 13:44:18 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lectureDay" id="FEFB3327-1240-F9D8-6B06-2E3B3E6887C9">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 13:49:13 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>EAF73AAF-8BA8-8A6A-36CC-0212B2016B0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lectureTime" id="C92D4F7C-BA91-7F4B-4983-FF250A705045">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 13:49:07 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BFCFC3F1-16D3-D574-0935-3D5CE6579F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F8491028-AB22-AF3C-F654-9C8C20A38CF8" name="LectureTime PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-21 13:49:33 UTC</createdTime>
+<ownerDesignName>UniversityDB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6C44923D-8D1A-45C0-5401-97977C03911B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C92D4F7C-BA91-7F4B-4983-FF250A705045</attributeRef>
+<attributeRef>FEFB3327-1240-F9D8-6B06-2E3B3E6887C9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45A22D08-55B1-7F95-3801-4AFC5C053694" name="Answer">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>C3F76558-E03D-74C5-A71A-EE35F94E9854</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="manageNo" id="ACA58EB4-3F33-5E68-230A-C305D617B2F3">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>2696F032-4E1E-A87E-6EC6-165B32722836</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B0FD01-7055-CFE1-5605-F091BF6514F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AD09A72-A3A3-CE23-DC95-F9F6984D54F3" referredColumn="3F752088-4EB7-DBFE-244D-F1BD1C128BAB"/>
+</associations>
+</Column>
+<Column name="title" id="B05E51AF-2A5B-00DD-BB6B-9532A68947EA">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>098F04A0-EA68-D77C-04E0-8374FD2A03B9</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3D528AC2-E3FA-43DA-9C53-9469D16B8A89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9397B6E0-9A22-FD5E-7EA3-88806322CDFC" referredColumn="D088C4B0-1989-1F5D-FA42-41E84829BDDE"/>
+</associations>
+</Column>
+<Column name="postingDate" id="F14654F7-8DFD-F2BE-08A8-D1C2106C30FE">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>C760B0EC-E324-1355-A99D-F196B3EB8DF9</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>522851E5-ECC4-8409-CF4C-B24DC5CEF92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9397B6E0-9A22-FD5E-7EA3-88806322CDFC" referredColumn="ECC0502C-B6F8-2A5D-88F7-B6F603C3E19A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8B8DFBB-212D-0E94-5FB9-B97ADEDA3E45" name="Answer_PK">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>37575370-7865-4AA6-E046-2350E16E05C8</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACA58EB4-3F33-5E68-230A-C305D617B2F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E744D337-8815-88C5-EB25-C3982CE02162" name="Answer__IDX">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>49A920DB-BE5B-7987-FB21-CDFD6C1BB538</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B05E51AF-2A5B-00DD-BB6B-9532A68947EA"/>
+<colUsage columnID="F14654F7-8DFD-F2BE-08A8-D1C2106C30FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="367293ED-6F01-792C-B413-CAB665DDA4FC" name="Board_Of_Answer">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>49A920DB-BE5B-7987-FB21-CDFD6C1BB538</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B05E51AF-2A5B-00DD-BB6B-9532A68947EA"/>
+<colUsage columnID="F14654F7-8DFD-F2BE-08A8-D1C2106C30FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EEC6FA0-5C9B-D616-C8A8-7AD8F3FC22DF" name="Employee_Of_Answer">
+<createdBy>ihyeonseog</createdBy>
+<createdTime>2023-09-16 12:57:03 UTC</createdTime>
+<generatorID>0D9B391D-F891-44BF-E889-35B83A5C24B9</generatorID>
+<ownerDesignName>ShopDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACA58EB4-3F33-5E68-230A-C305D617B2F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

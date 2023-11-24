@@ -1,5 +1,5 @@
 create or replace trigger MovieProd_Insert
-instead of insert on movieprod
+instead of insert or update on movieprod
 for each row
 declare
     p_no movieexec.certno%type;

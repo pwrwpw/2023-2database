@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: blue;
+        }
+
+        .form-check-input {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 20em;
+        }
+
+        input[name="born_year"] {
+            width: 100%;
+            max-width: 5em;
+        }
+        input[name="range_start"], input[name="range_end"] {
+            width: 100%;
+            max-width: 4.5em;
+        }
+
+        .form-control {
+            height: calc(1.5em + .75rem + 2px); 
+            padding: .375rem .75rem;
+        }
+
+        .btn {
+            padding: .375rem .75rem;
+            border-radius: .25rem;
+        }
+        
+        #searchResults {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 15px;
+        }
+
+        #searchForm {
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>DB #10 과제</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="searchForm" action="movie_list.php" method="post" target="searchResults">
+            <div class="form-group form-inline">
+                <label for="m_title">영화제목에 포함될 단어: </label>
+                <input type="text" class="form-control" id="m_title" name="m_title">(
+                <input type="checkbox" class="form-check-input" id="isLike" name="isLike">
+                <label class="form-check-label" for="isLike">LIKE 사용)</label>
+            </div>
+            <div class="form-group form-inline">
+                <label for="range_start">상영시간 범위:</label>
+                <input type="number" class="form-control mx-2" id="range_start" name="range_start">
+                <span>-</span>
+                <input type="number" class="form-control mx-2" id="range_end" name="range_end">
+            </div>
+            <div class="form-group form-inline">
+                <input type="number" class="form-control" id="born_year" name="born_year">
+                <label class="ml-2">년 이후 태어난 배우가 출연 (</label>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="isMale" name="actor_gender" class="custom-control-input" value="male">
+                    <label class="custom-control-label" for="isMale">남자</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="isFemale" name="actor_gender" class="custom-control-input" value="female">
+                    <label class="custom-control-label" for="isFemale">여자)</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">검색</button>
+            <button type="reset" class="btn btn-secondary">다시 설정</button>
+        </form>
+                <iframe id="searchResults" name="searchResults"></iframe>
+    </div>
+</body>
+</html>
